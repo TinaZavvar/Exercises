@@ -35,7 +35,7 @@ def printOut(name1,grade1):
     for i3 in range(len(name1)):
         print("{}: {}".format(name1[i3], grade1[i3]))
         
-#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 while i is 0:
     name=input('Enter a name: ')
     grade=int(input("Enter the grade:[0-100] "))
