@@ -1,0 +1,66 @@
+i=0
+name1=[]
+grade1=[]
+
+def add(name, grade):
+    name1.append(name)
+    grade1.append(grade)
+    return name1, grade1
+
+def check(grade):
+    if grade>=0 and grade<=100:
+        add(name, grade)
+    else:
+        print("wrong number for the grade!")
+        grade=int(input(print("Enter the grade:(0-100) ")))
+    
+
+def search(name2):
+    if x3 in name1:
+        i5=name1.index(x3)
+        print("{}: {}".format(name1[i5], grade1[i5]))
+    else:
+        print("It is not a correct name")
+
+def update(name):
+    if x4 in name1:
+        i5=name1.index(x4)
+        i4=input(print("What is the new grade? "))
+        grade1[i5]=i4
+        print("it is:" ,grade1[i5])
+    else:
+        print("It is not a correct name")
+
+def printOut(name1,grade1):
+    for i3 in range(len(name1)):
+        print("{}: {}".format(name1[i3], grade1[i3]))
+        
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+while i is 0:
+    name=input('Enter a name: ')
+    grade=int(input("Enter the grade:[0-100] "))
+    check(grade)
+    x=int(input("Do you want to add a person's name? yes=1, no=2 "))
+    if x==1:
+        i=0
+    else:
+        i=1
+
+printOut(name1,grade1)
+i1=1
+while i1 is 1:
+    x2=int(input("What do you want to do? search=1, add=2, update=3, break=4 "))
+    if x2==1:
+        x3=str(input("who? "))
+        search(x3)
+    elif x2==2:
+         name=input("Enter a name: ")
+         grade=int(input("Enter the grade:[0-100] "))
+         check(grade)
+    elif x2==3:
+        x4=str(input("Who? "))
+        update(x4)
+    else:
+        i1=0
+printOut(name1,grade1)
+
