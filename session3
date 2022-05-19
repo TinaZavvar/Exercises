@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+        <style>
+        body {
+        background-color: lightgray;
+        }
+        h1 {
+        color: white;
+        text-align: center;
+        }
+        p{
+            front-family: verdana;
+            font-size: 20px;
+            color: yellow;
+        }
+     </style>
+        </head>
+        <body>
+
+            <h1>Tina App</h1>
+
+            <form action="/action_page.php">
+                <label for="fname">Username:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Password:</label>
+                <input type="password" id="lname" name="lname"><br><br>
+                 </form>
+            
+            <form method="get" action="file:///C:/Users/tina/Desktop/AWS/secondPage.html">
+                <button class="btn info" type="submit">Enter</button>
+            </form>
+            
+           
+        <body>
+<html>
